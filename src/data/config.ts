@@ -11,7 +11,7 @@
     subtitle: "Monte seu pedido e envie direto pelo WhatsApp.",
     primaryCta: "Ver pedido",
     secondaryCta: "Enviar pelo WhatsApp",
-    deadline: "Pedidos até 10/05",
+    deadline: "Pedidos até 08/05",
     packaging: "Embalagens para viagem"
   }
 } as const;
