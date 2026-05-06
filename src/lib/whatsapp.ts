@@ -41,6 +41,6 @@ export function buildWhatsAppUrl(items: CartItem[], notes?: string) {
 }
 
 export function buildWhatsAppQuestionUrl() {
-  const message = "Ola! Tenho uma duvida sobre o cardapio especial de Pascoa.";
+  const message = "Olá! Tenho uma dúvida sobre o cardápio especial de Dia das Mães.";
   return `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }

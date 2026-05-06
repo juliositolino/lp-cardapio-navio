@@ -70,7 +70,7 @@ export default function HomePage() {
   }
 
   return (
-    <main className="pb-28 lg:pb-0">
+    <main className="pb-28 lg:pb-0 high-contrast">
       <Header
         itemCount={totalItems}
         onOpenCart={handleOpenCart}

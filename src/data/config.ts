@@ -1,4 +1,4 @@
-export const SITE_CONFIG = {
+﻿export const SITE_CONFIG = {
   brandName: "Navio Pescados e Gastronomia",
   since: "Desde 1982",
   whatsappNumber:
@@ -6,13 +6,12 @@ export const SITE_CONFIG = {
   instagramUrl: "https://instagram.com/naviopescados",
   address: "Navio Pescados e Gastronomia",
   campaign: {
-    eyebrow: "Cardápio Especial de Páscoa",
-    title: "Cardápio Especial de Páscoa",
+    eyebrow: "Cardápio Especial de Dia das Mães",
+    title: "Cardápio Especial de Dia das Mães",
     subtitle: "Monte seu pedido e envie direto pelo WhatsApp.",
     primaryCta: "Ver pedido",
     secondaryCta: "Enviar pelo WhatsApp",
-    deadline: "Pedidos até 31/03",
-    packaging:
-      "Embalagens para viagem"
+    deadline: "Pedidos até 10/05",
+    packaging: "Embalagens para viagem"
   }
 } as const;

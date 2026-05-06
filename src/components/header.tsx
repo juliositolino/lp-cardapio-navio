@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { ClipboardList, MessageCircleMore } from "lucide-react";
@@ -22,7 +22,7 @@ export function Header({
   canCheckout
 }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-[rgba(6,19,31,0.95)] backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-[rgba(47,26,33,0.93)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <div className="flex min-w-0 items-center gap-3">
           <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full border border-white/10 bg-[var(--color-ivory)] shadow-[0_6px_18px_rgba(0,0,0,0.16)]">
@@ -38,7 +38,7 @@ export function Header({
             <p className="truncate font-serif text-lg text-white sm:text-xl">
               {SITE_CONFIG.brandName}
             </p>
-            <p className="text-xs text-slate-400">{SITE_CONFIG.campaign.title}</p>
+            <p className="text-xs text-rose-200/80">{SITE_CONFIG.campaign.title}</p>
           </div>
         </div>
 
