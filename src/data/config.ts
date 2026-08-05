@@ -6,12 +6,13 @@
   instagramUrl: "https://instagram.com/naviopescados",
   address: "Navio Pescados e Gastronomia",
   campaign: {
-    eyebrow: "Cardápio Especial de Dia das Mães",
-    title: "Cardápio Especial de Dia das Mães",
-    subtitle: "Monte seu pedido e envie direto pelo WhatsApp.",
+    eyebrow: "Almoço Especial no Domingo dos Pais",
+    title: "Cardápio Especial de Dia dos Pais",
+    subtitle: "No almoço deste domingo, o prato principal é o tempo em família.",
     primaryCta: "Ver pedido",
     secondaryCta: "Enviar pelo WhatsApp",
-    deadline: "Pedidos até 08/05",
+    deadline: "Pedidos até 07/08",
+    eventDate: "Domingo dos Pais: 09/08",
     packaging: "Embalagens para viagem"
   }
 } as const;

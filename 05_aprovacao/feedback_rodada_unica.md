@@ -1,22 +1,22 @@
-﻿# Feedback - Rodada Unica
+# Feedback - Rodada Única
 
-Data: 2026-05-05
+Data: 2026-08-05
 
-## Versoes enviadas
-- cardapio-dia-das-maes_v01_fiel
-- cardapio-dia-das-maes_v02_contraste-reforcado
+## Versões enviadas
+- cardapio-dia-dos-pais_v01_fiel
+- cardapio-dia-dos-pais_v02_contraste-reforcado
 
-## Decisao
+## Decisão
 - [ ] Aprovar v01 sem ajustes
 - [ ] Aprovar v02 sem ajustes
 - [ ] Ajustar v01
 - [ ] Ajustar v02
 
 ## Ajustes solicitados
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
-## Responsavel pela aprovacao
+## Responsável pela aprovação
 - Nome:
 - Data:

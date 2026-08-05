@@ -86,6 +86,9 @@ export default function HomePage() {
             <span className="rounded-full border border-[var(--color-gold-500)]/20 bg-[var(--color-gold-500)]/10 px-4 py-2 text-sm font-semibold text-[var(--color-gold-400)]">
               {SITE_CONFIG.campaign.deadline}
             </span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-[var(--color-gold-300)]">
+              {SITE_CONFIG.campaign.eventDate}
+            </span>
           </div>
         </section>
 

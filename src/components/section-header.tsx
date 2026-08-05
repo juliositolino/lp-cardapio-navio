@@ -18,7 +18,7 @@ export function SectionHeader({
       ) : null}
       <h2 className="font-serif text-2xl text-white md:text-3xl">{title}</h2>
       {description ? (
-        <p className="text-sm text-rose-100/80">{description}</p>
+        <p className="text-sm text-[var(--color-gold-300)]/75">{description}</p>
       ) : null}
     </div>
   );

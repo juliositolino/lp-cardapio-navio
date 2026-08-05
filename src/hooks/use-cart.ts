@@ -5,8 +5,8 @@ import { useEffect, useMemo, useState } from "react";
 import { getCartSubtotal } from "@/lib/whatsapp";
 import type { CartItem, MenuProduct, MenuVariation } from "@/types/menu";
 
-const STORAGE_KEY = "navio-pascoa-cart";
-const NOTES_STORAGE_KEY = "navio-pascoa-notes";
+const STORAGE_KEY = "navio-dia-dos-pais-cart";
+const NOTES_STORAGE_KEY = "navio-dia-dos-pais-notes";
 
 function getVariationLabel(variation: MenuVariation) {
   if (variation.size && variation.label === "Única") {

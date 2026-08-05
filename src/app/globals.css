@@ -1,15 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #2f1a21;
-  --foreground: #f9eff0;
-  --color-navy-900: #2f1a21;
-  --color-navy-800: #472733;
-  --color-navy-700: #6e3a4b;
-  --color-gold-500: #b76c80;
-  --color-gold-400: #cd8ea0;
-  --color-gold-300: #ebc7d1;
-  --color-ivory: #f7e7ea;
+  --background: #06344a;
+  --foreground: #f8efe5;
+  --color-navy-950: #062a3d;
+  --color-navy-900: #07364d;
+  --color-navy-800: #0a4963;
+  --color-navy-700: #125a73;
+  --color-gold-500: #f3d8bd;
+  --color-gold-400: #fff0de;
+  --color-gold-300: #fff8ef;
+  --color-ivory: #f8efe5;
+  --color-ink: #0a3b54;
+  --color-coral: #d47b42;
 }
 
 html {
@@ -19,14 +22,15 @@ html {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(231, 176, 189, 0.22), transparent 28%),
-    linear-gradient(180deg, #42262f 0%, #2f1a21 100%);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(180deg, #073d58 0%, #05283b 100%);
+  background-size: 112px 112px, auto;
   color: var(--foreground);
   font-family: var(--font-base), sans-serif;
 }
 
 ::selection {
-  background: rgba(232, 145, 57, 0.32);
+  background: rgba(243, 216, 189, 0.32);
   color: white;
 }
 
@@ -38,15 +42,20 @@ body {
   font-family: var(--font-script), cursive;
 }
 
+.font-display {
+  font-family: var(--font-display), var(--font-heading), serif;
+}
+
 .high-contrast {
-  --background: #231117;
-  --foreground: #fff7f8;
-  --color-navy-900: #231117;
-  --color-navy-800: #3a1c27;
-  --color-navy-700: #5c2d3b;
-  --color-gold-500: #d691a5;
-  --color-gold-400: #efb8c7;
-  --color-gold-300: #f8dbe3;
+  --background: #05283b;
+  --foreground: #fff8ef;
+  --color-navy-950: #041e2e;
+  --color-navy-900: #05283b;
+  --color-navy-800: #073d58;
+  --color-navy-700: #0f5873;
+  --color-gold-500: #f3d8bd;
+  --color-gold-400: #fff0de;
+  --color-gold-300: #fff8ef;
 }
 
 ::-webkit-scrollbar {
@@ -55,7 +64,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 999px;
-  background: rgba(243, 168, 79, 0.25);
+  background: rgba(243, 216, 189, 0.28);
 }
 
 ::-webkit-scrollbar-track {

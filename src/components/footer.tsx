@@ -4,7 +4,7 @@ import { SITE_CONFIG } from "@/data/config";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[rgba(37,20,27,0.72)]">
+    <footer className="border-t border-white/10 bg-[rgba(4,30,46,0.72)]">
       <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-6 text-sm sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
         <div>
           <p className="font-serif text-xl text-white">{SITE_CONFIG.brandName}</p>

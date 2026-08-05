@@ -117,7 +117,7 @@ export function ProductCard({
               className={`inline-flex min-w-[128px] items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold transition ${
                 isAdded
                   ? "bg-emerald-500 text-white"
-                  : "bg-[var(--color-gold-500)] text-slate-950 hover:bg-[var(--color-gold-400)]"
+                  : "bg-[var(--color-gold-500)] text-[var(--color-ink)] hover:bg-[var(--color-gold-400)]"
               }`}
             >
               {isAdded ? (

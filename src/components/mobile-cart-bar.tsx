@@ -37,7 +37,7 @@ export function MobileCartBar({
         <button
           type="button"
           onClick={onOpen}
-          className="inline-flex items-center gap-2 rounded-full bg-[var(--color-gold-500)] px-4 py-3 text-sm font-semibold text-slate-950"
+          className="inline-flex items-center gap-2 rounded-full bg-[var(--color-gold-500)] px-4 py-3 text-sm font-semibold text-[var(--color-ink)]"
         >
           Finalizar pedido
         </button>

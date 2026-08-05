@@ -6,7 +6,7 @@ type CategoryNavProps = {
 
 export function CategoryNav({ categories }: CategoryNavProps) {
   return (
-    <div className="sticky top-[69px] z-30 border-b border-white/10 bg-[rgba(47,26,33,0.92)] py-3 backdrop-blur">
+    <div className="sticky top-[69px] z-30 border-b border-white/10 bg-[rgba(5,40,59,0.92)] py-3 backdrop-blur">
       <nav className="grid grid-cols-2 gap-2 sm:grid-cols-5">
         {categories.map((category) => (
           <a

@@ -27,7 +27,8 @@ async function waitForServer(url, timeoutMs = 120000) {
 }
 
 async function exportVariant(page, { url, jpgPath, pdfPath }) {
-  await page.goto(url, { waitUntil: "networkidle" });
+  await page.goto(url, { waitUntil: "domcontentloaded" });
+  await page.waitForLoadState("load");
   await page.waitForTimeout(1800);
 
   await page.screenshot({
@@ -54,10 +55,12 @@ async function main() {
   await mkdir(approvalDir, { recursive: true });
   await mkdir(exportDir, { recursive: true });
 
-  const dev = spawn("npm", ["run", "dev"], {
+  const isWindows = process.platform === "win32";
+  const npmCommand = isWindows ? "npm.cmd" : "npm";
+  const dev = spawn(npmCommand, ["run", "dev"], {
     cwd: root,
     stdio: "ignore",
-    shell: true
+    shell: isWindows
   });
 
   try {
@@ -66,10 +69,10 @@ async function main() {
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage({ viewport: { width: 1440, height: 2400 } });
 
-    const v01Jpg = path.join(approvalDir, "cardapio-dia-das-maes_v01_fiel.jpg");
-    const v01Pdf = path.join(approvalDir, "cardapio-dia-das-maes_v01_fiel.pdf");
-    const v02Jpg = path.join(approvalDir, "cardapio-dia-das-maes_v02_contraste-reforcado.jpg");
-    const v02Pdf = path.join(approvalDir, "cardapio-dia-das-maes_v02_contraste-reforcado.pdf");
+    const v01Jpg = path.join(approvalDir, "cardapio-dia-dos-pais_v01_fiel.jpg");
+    const v01Pdf = path.join(approvalDir, "cardapio-dia-dos-pais_v01_fiel.pdf");
+    const v02Jpg = path.join(approvalDir, "cardapio-dia-dos-pais_v02_contraste-reforcado.jpg");
+    const v02Pdf = path.join(approvalDir, "cardapio-dia-dos-pais_v02_contraste-reforcado.pdf");
 
     await exportVariant(page, {
       url: "http://127.0.0.1:3000",
@@ -78,15 +81,15 @@ async function main() {
     });
 
     await exportVariant(page, {
-      url: "http://127.0.0.1:3000/?variant=high-contrast",
+      url: "http://127.0.0.1:3000",
       jpgPath: v02Jpg,
       pdfPath: v02Pdf
     });
 
     await browser.close();
 
-    await copyFile(v01Jpg, path.join(exportDir, "cardapio-dia-das-maes_v01.jpg"));
-    await copyFile(v02Jpg, path.join(exportDir, "cardapio-dia-das-maes_v02.jpg"));
+    await copyFile(v01Jpg, path.join(exportDir, "cardapio-dia-dos-pais_v01.jpg"));
+    await copyFile(v02Jpg, path.join(exportDir, "cardapio-dia-dos-pais_v02.jpg"));
   } finally {
     dev.kill();
   }

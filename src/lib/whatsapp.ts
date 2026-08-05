@@ -12,7 +12,7 @@ export function getCartSubtotal(items: CartItem[]) {
 
 export function buildWhatsAppMessage(items: CartItem[], notes?: string) {
   const lines = [
-    "Ola! Gostaria de fazer um pedido:",
+    "Olá! Gostaria de fazer um pedido para o Dia dos Pais:",
     "",
     "Itens do pedido:"
   ];
@@ -25,7 +25,7 @@ export function buildWhatsAppMessage(items: CartItem[], notes?: string) {
 
   if (notes?.trim()) {
     lines.push("");
-    lines.push("Observacoes:");
+    lines.push("Observações:");
     lines.push(notes.trim());
   }
 
@@ -41,6 +41,6 @@ export function buildWhatsAppUrl(items: CartItem[], notes?: string) {
 }
 
 export function buildWhatsAppQuestionUrl() {
-  const message = "Olá! Tenho uma dúvida sobre o cardápio especial de Dia das Mães.";
+  const message = "Olá! Tenho uma dúvida sobre o cardápio especial de Dia dos Pais.";
   return `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
