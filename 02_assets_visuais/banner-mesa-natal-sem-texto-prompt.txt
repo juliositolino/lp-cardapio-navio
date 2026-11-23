@@ -1,0 +1,6 @@
+Edição: remoção do texto sobreposto à foto enviada pelo responsável pela Navio.
+Ferramenta: ImageGen integrado (modo built-in), sem uso de API/CLI.
+Arquivo final: public/campaigns/final-de-ano-2026/mesa-natal-sem-texto.png
+
+Prompt utilizado:
+Use case: precise-object-edit. Edit target: the attached original portrait photograph of the Christmas seafood table (first provided photo, not the separate close-up of cod). Remove ONLY the large white overlaid headline in the upper right that reads 'QUE PRATO COMBINA COM A SUA MESA DE NATAL?'. Reconstruct that small area as the same plain dark teal painted wall with its original subtle gradient, lighting and texture, seamlessly. Preserve the original photograph, portrait framing, every dish, food ingredient, wine bottle, glass, flower, placemat, colors, focus and lighting unchanged. Do not add anything, do not crop or zoom, do not restyle the food. Keep the printed physical label on the wine bottle. No added typography, logo, watermark, decorations, or other writing over the photograph. Output a clean photo for the website banner, maintaining the source aspect ratio.

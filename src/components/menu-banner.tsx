@@ -18,10 +18,10 @@ export function MenuBanner() {
             </h1>
             <p className="mt-3 max-w-md text-base text-[#f8efe5]/85">{campaign.subtitle}</p>
           </div>
-          <div className="relative min-h-[190px] sm:min-h-[270px]">
+          <div className="relative min-h-[250px] sm:min-h-[320px]">
             <Image src={campaign.banner.image} alt={campaign.banner.alt} fill priority
               sizes="(min-width: 1280px) 580px, (min-width: 640px) 48vw, calc(100vw - 32px)"
-              className="object-cover object-center" />
+              className="object-cover" style={{ objectPosition: campaign.banner.position ?? "center" }} />
           </div>
         </div>
       </section>

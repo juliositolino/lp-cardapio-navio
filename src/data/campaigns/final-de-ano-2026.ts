@@ -24,14 +24,16 @@ export const yearEnd2026: Campaign = {
   pickupAddress: "Av. Manoel Goulart, 1453",
   packaging: "Embalagens para viagem",
   banner: {
-    image: photo("mesa-de-natal"),
-    alt: "Bacalhau na mesa de Natal da campanha de Final de Ano da Navio",
+    image: "/campaigns/final-de-ano-2026/mesa-natal-sem-texto.png",
+    alt: "Mesa de Natal da Navio com bacalhau, frutos do mar e acompanhamentos",
+    position: "center 75%",
     headline: "Fim de ano com gosto de mar começa no Navio."
   },
   orderMessage: "Olá! Gostaria de fazer uma encomenda de rotisseria para o Final de Ano 2026:",
   questionMessage: "Olá! Tenho uma dúvida sobre o cardápio de Final de Ano 2026.",
   products: {
     "bacalhau-a-moda": {
+      image: "/campaigns/final-de-ano-2026/bacalhau-a-moda-campanha.png",
       variations: sizes("bacalhau-a-moda", [["P", 380], ["M", 690], ["G", 1400]])
     },
     "bacalhau-a-siqueira": {

@@ -15,7 +15,7 @@ export type Campaign = {
   eventDate: string;
   pickupAddress?: string;
   packaging: string;
-  banner: { image: string; alt: string; headline?: string };
+  banner: { image: string; alt: string; headline?: string; position?: string };
   orderMessage: string;
   questionMessage: string;
   products: Record<string, Partial<Omit<MenuProduct, "id">>>;
