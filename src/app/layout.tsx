@@ -1,31 +1,36 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Great_Vibes, Nunito_Sans, Playfair_Display, Rye } from "next/font/google";
+import localFont from "next/font/local";
 import { SITE_CONFIG } from "@/data/config";
 
 import "./globals.css";
 
-const baseFont = Nunito_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const baseFont = localFont({
+  src: "./fonts/nunito-sans-latin.woff2",
+  weight: "400 700",
+  display: "swap",
   variable: "--font-base"
 });
 
-const headingFont = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["600", "700"],
+const headingFont = localFont({
+  src: "./fonts/playfair-display-latin.woff2",
+  weight: "600 700",
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
   variable: "--font-heading"
 });
 
-const scriptFont = Great_Vibes({
-  subsets: ["latin"],
-  weight: ["400"],
+const scriptFont = localFont({
+  src: "./fonts/great-vibes-latin.woff2",
+  weight: "400",
+  display: "swap",
   variable: "--font-script"
 });
 
-const displayFont = Rye({
-  subsets: ["latin"],
-  weight: ["400"],
+const displayFont = localFont({
+  src: "./fonts/rye-latin.woff2",
+  weight: "400",
+  display: "swap",
   variable: "--font-display"
 });
 
