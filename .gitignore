@@ -3,6 +3,7 @@ node_modules
 .vercel
 dist
 coverage
+tmp/
 tsconfig.tsbuildinfo
 .DS_Store
 *.log

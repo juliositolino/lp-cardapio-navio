@@ -3,18 +3,13 @@
 import { useEffect, useMemo, useState } from "react";
 
 import { getCartSubtotal } from "@/lib/whatsapp";
+import { getVariationLabel, restoreCartItems } from "@/lib/cart";
+import { SITE_CONFIG } from "@/data/config";
+import { menuProducts } from "@/data/menu";
 import type { CartItem, MenuProduct, MenuVariation } from "@/types/menu";
 
-const STORAGE_KEY = "navio-dia-dos-pais-cart";
-const NOTES_STORAGE_KEY = "navio-dia-dos-pais-notes";
-
-function getVariationLabel(variation: MenuVariation) {
-  if (variation.size && variation.label === "Única") {
-    return variation.size;
-  }
-
-  return variation.size ? `${variation.label} ${variation.size}` : variation.label;
-}
+const STORAGE_KEY = `navio-${SITE_CONFIG.campaign.id}-cart`;
+const NOTES_STORAGE_KEY = `navio-${SITE_CONFIG.campaign.id}-notes`;
 
 export function useCart() {
   const [items, setItems] = useState<CartItem[]>([]);
@@ -27,7 +22,7 @@ export function useCart() {
       const storedNotes = window.localStorage.getItem(NOTES_STORAGE_KEY);
 
       if (storedItems) {
-        setItems(JSON.parse(storedItems));
+        setItems(restoreCartItems(JSON.parse(storedItems), menuProducts));
       }
 
       if (storedNotes) {

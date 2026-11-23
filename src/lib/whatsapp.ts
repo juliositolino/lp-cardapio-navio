@@ -12,7 +12,7 @@ export function getCartSubtotal(items: CartItem[]) {
 
 export function buildWhatsAppMessage(items: CartItem[], notes?: string) {
   const lines = [
-    "Olá! Gostaria de fazer um pedido para o Dia dos Pais:",
+    SITE_CONFIG.campaign.orderMessage,
     "",
     "Itens do pedido:"
   ];
@@ -41,6 +41,6 @@ export function buildWhatsAppUrl(items: CartItem[], notes?: string) {
 }
 
 export function buildWhatsAppQuestionUrl() {
-  const message = "Olá! Tenho uma dúvida sobre o cardápio especial de Dia dos Pais.";
+  const message = SITE_CONFIG.campaign.questionMessage;
   return `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Great_Vibes, Nunito_Sans, Playfair_Display, Rye } from "next/font/google";
+import { SITE_CONFIG } from "@/data/config";
 
 import "./globals.css";
 
@@ -29,9 +30,10 @@ const displayFont = Rye({
 });
 
 export const metadata: Metadata = {
-  title: "Navio | Cardápio Especial de Dia dos Pais",
+  applicationName: SITE_CONFIG.projectName,
+  title: `Navio | ${SITE_CONFIG.campaign.title}`,
   description:
-    "Cardápio especial da Navio Pescados e Gastronomia para pedidos de Dia dos Pais via WhatsApp.",
+    `${SITE_CONFIG.campaign.subtitle} ${SITE_CONFIG.campaign.deadline}. ${SITE_CONFIG.campaign.eventDate}.`,
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -41,9 +43,9 @@ export const metadata: Metadata = {
     apple: "/navio-logo.jpeg"
   },
   openGraph: {
-    title: "Navio | Cardápio Especial de Dia dos Pais",
+    title: `Navio | ${SITE_CONFIG.campaign.title}`,
     description:
-      "Escolha pratos, acompanhamentos e envie seu pedido especial de Dia dos Pais pelo WhatsApp.",
+      `${SITE_CONFIG.campaign.subtitle} Escolha seus pratos e envie o pedido pelo WhatsApp.`,
     type: "website"
   }
 };

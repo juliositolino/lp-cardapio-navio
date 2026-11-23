@@ -90,6 +90,11 @@ export default function HomePage() {
               {SITE_CONFIG.campaign.eventDate}
             </span>
           </div>
+          {SITE_CONFIG.campaign.pickupAddress ? (
+            <p className="mt-3 text-sm text-slate-300">
+              Retirada na loja: {SITE_CONFIG.campaign.pickupAddress}.
+            </p>
+          ) : null}
         </section>
 
         <section id="cardapio" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
