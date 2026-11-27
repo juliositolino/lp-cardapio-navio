@@ -64,7 +64,7 @@ export function ProductCard({
         <h3 className="pr-2 font-serif text-xl leading-tight text-white">
           {product.name}
         </h3>
-        <p className="mt-1 truncate text-sm text-slate-400">{product.description}</p>
+        <p className="mt-1 text-sm leading-relaxed text-slate-400">{product.description}</p>
 
         <div className="mt-3 grid gap-2">
             {product.variations.map((variation) => {

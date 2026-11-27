@@ -2,6 +2,7 @@ import type { Campaign } from "@/types/campaign";
 import type { MenuVariation } from "@/types/menu";
 
 const photo = (name: string) => `/campaigns/final-de-ano-2026/${name}.jpg`;
+const novemberPhoto = (name: string) => `/campaigns/final-de-ano-2026/sessao-novembro/${name}.webp`;
 const sizes = (productId: string, prices: Array<[string, number, string?]>): MenuVariation[] =>
   prices.map(([label, price, size]) => ({
     id: `${productId}-${label.toLowerCase()}`,
@@ -41,7 +42,6 @@ export const yearEnd2026: Campaign = {
     },
     "bacalhau-nas-natas": {
       name: "Bacalhau de Natas em Postas",
-      description: "Bacalhau em postas, cremoso e dourado.",
       image: photo("bacalhau-de-natas"),
       variations: sizes("bacalhau-nas-natas", [["P", 360], ["M", 650], ["G", 1200]])
     },
@@ -58,24 +58,30 @@ export const yearEnd2026: Campaign = {
       variations: sizes("bobo-de-camarao", [["M", 220, "1kg"], ["G", 340, "1,5kg"]])
     },
     "arroz-cremoso-de-camarao": {
+      image: novemberPhoto("arroz-cremoso-de-camarao"),
       variations: sizes("arroz-cremoso-de-camarao", [["M", 220, "1kg"], ["G", 340, "1,5kg"]])
     },
     "salmao-a-moda": {
+      image: novemberPhoto("salmao-a-moda"),
       variations: sizes("salmao-a-moda", [["M", 240], ["G", 380]])
     },
     "salmao-a-belle-muniere": {
+      image: novemberPhoto("salmao-a-belle-muniere"),
       variations: sizes("salmao-a-belle-muniere", [["M", 280], ["G", 460]])
     },
     "tilapia-a-moda": {
+      image: novemberPhoto("tilapia-a-moda"),
       variations: sizes("tilapia-a-moda", [["M", 180], ["G", 280]])
     },
     "tilapia-a-belle-muniere": {
       variations: sizes("tilapia-a-belle-muniere", [["M", 260], ["G", 420]])
     },
     "abadejo-a-moda": {
+      image: novemberPhoto("abadejo-a-moda"),
       variations: sizes("abadejo-a-moda", [["M", 290], ["G", 480]])
     },
     "abadejo-a-belle-muniere": {
+      image: novemberPhoto("abadejo-a-belle-muniere"),
       variations: sizes("abadejo-a-belle-muniere", [["M", 320], ["G", 540]])
     },
     "antepasto-polvo-e-lula": {
@@ -83,6 +89,7 @@ export const yearEnd2026: Campaign = {
       variations: sizes("antepasto-polvo-e-lula", [["P", 75, "300g"]])
     },
     "migas-de-bacalhau": {
+      image: novemberPhoto("migas-de-bacalhau"),
       variations: sizes("migas-de-bacalhau", [["P", 65, "300g"]])
     },
     ceviche: {
@@ -96,7 +103,12 @@ export const yearEnd2026: Campaign = {
       image: photo("torta-de-camarao"),
       variations: sizes("torta-de-camarao", [["800g", 95]])
     },
-    "vinagrete-de-marisco": { image: photo("vinagrete-de-marisco") }
+    "vinagrete-de-marisco": { image: photo("vinagrete-de-marisco") },
+    "arroz-com-brocolis": { image: novemberPhoto("arroz-com-brocolis") },
+    "arroz-a-grega": { image: novemberPhoto("arroz-a-grega") },
+    "arroz-alho-e-salsa": { image: novemberPhoto("arroz-alho-e-salsa") },
+    sardela: { image: novemberPhoto("sardela") },
+    "maionese-de-camarao": { image: novemberPhoto("maionese-de-camarao") }
   },
   extraProducts: [{
     id: "bacalhau-de-natas-em-lascas",

@@ -12,6 +12,8 @@ Projeto sazonal para Quaresma, Dia das Mães, Dia dos Pais e Final de Ano. As ca
 - Local: Av. Manoel Goulart, 1453.
 - Preços: tabela enviada pelo responsável em 23/11/2026; demais valores mantidos.
 - Fotos: extraídas do PDF da agência, sem recriar os pratos. O quadro de mariscos foi usado no Vinagrete de Marisco; a campanha não identifica esse prato como salada de bacalhau.
+- Sessão de novembro: 12 produtos receberam fotos aprovadas, em WebP de 1200 x 900 pixels. Os originais foram preservados. Bacalhau de Natas em Lascas, Tilápia à Belle Munière e Arroz de Amêndoas continuam sem foto por falta de correspondência.
+- Descrições: textos completos dos 30 produtos correspondentes ao PDF de Quaresma, exibidos sem corte nos cards. Preços e tamanhos da campanha de Final de Ano mantidos.
 - O prazo de 31/12 da peixaria não foi aplicado às encomendas da rotisseria.
 
 ## Estrutura
@@ -26,3 +28,4 @@ Projeto sazonal para Quaresma, Dia das Mães, Dia dos Pais e Final de Ano. As ca
 
 - 2026-08-05: campanha de Dia dos Pais.
 - 2026-11-23: projeto e pasta atualizados para Cardapio Navio; campanhas isoladas por edição; Final de Ano 2026 ativado com preços fornecidos e imagens extraídas da agência.
+- 2026-11-27: descrições completas e 12 fotos da sessão de novembro aprovadas; imagens otimizadas e tamanhos responsivos ajustados. Publicação autorizada pelo responsável.
